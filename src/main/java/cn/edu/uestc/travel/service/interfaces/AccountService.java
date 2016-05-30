@@ -18,5 +18,7 @@ import cn.edu.uestc.travel.entity.Account;
  *         
  */
 public interface AccountService {
+	
 	Account Login(Account account);
+
 }
