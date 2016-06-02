@@ -8,6 +8,8 @@
  */
 package cn.edu.uestc.travel.service.impl;
 
+import org.springframework.stereotype.Service;
+
 import cn.edu.uestc.travel.entity.Account;
 import cn.edu.uestc.travel.service.interfaces.AccountService;
 
@@ -18,6 +20,7 @@ import cn.edu.uestc.travel.service.interfaces.AccountService;
  * @date 2016年5月30日 上午11:28:05    
  *         
  */
+@Service
 public class AccountServiceImpl implements AccountService{
 	/* (非 Javadoc)   
 	 * <p>Title: Login</p>    
@@ -29,6 +32,10 @@ public class AccountServiceImpl implements AccountService{
 	@Override
 	public Account Login(Account account) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		if("ls".equals(account.getUsername())&&"123".equals( account.getPassword() ) ){
+			System.out.println("Login sucessful");
+		}
+		return account;
 	}
 }

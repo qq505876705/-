@@ -8,6 +8,8 @@
  */
 package cn.edu.uestc.travel.dao;
 
+import cn.edu.uestc.travel.entity.Account;
+
 /**   
  * @ClassName: AccountDao    
  * @Description: TODO(这里用一句话描述这个类的作用)    
@@ -15,6 +17,8 @@ package cn.edu.uestc.travel.dao;
  * @date 2016年5月30日 上午11:09:50    
  *         
  */
-public class AccountDao {
-
+public interface AccountDao {
+	
+	Account findByAccount(Account account);
+	
 }

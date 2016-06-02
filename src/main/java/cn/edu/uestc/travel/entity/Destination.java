@@ -20,4 +20,29 @@ public class Destination {
 	private String desname;
 	private String address;
 	private String describle;
+	
+	public int getDesid() {
+		return desid;
+	}
+	public void setDesid(int desid) {
+		this.desid = desid;
+	}
+	public String getDesname() {
+		return desname;
+	}
+	public void setDesname(String desname) {
+		this.desname = desname;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getDescrible() {
+		return describle;
+	}
+	public void setDescrible(String describle) {
+		this.describle = describle;
+	}
 }
