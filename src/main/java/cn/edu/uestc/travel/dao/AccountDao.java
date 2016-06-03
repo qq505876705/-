@@ -19,6 +19,8 @@ import cn.edu.uestc.travel.entity.Account;
  */
 public interface AccountDao {
 	
-	Account findByAccount(Account account);
+	Account findByAccount(String account);
+	
+	int insert (Account account);
 	
 }

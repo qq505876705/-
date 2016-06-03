@@ -8,6 +8,10 @@
  */
 package cn.edu.uestc.travel.service.interfaces;
 
+import javax.security.auth.login.LoginException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import cn.edu.uestc.travel.entity.Account;
 
 /**   
@@ -18,15 +22,18 @@ import cn.edu.uestc.travel.entity.Account;
  *         
  */
 public interface AccountService {
-	/**
-	 * 
+	
+	/**   
 	 * @Title: Login    
-	 * @Description: 登录功能  
+	 * @Description: TODO(这里用一句话描述这个方法的作用)    
 	 * @param @param account
-	 * @param @return    设定文件    
+	 * @param @param session
+	 * @param @param request
+	 * @param @return
+	 * @param @throws LoginException    设定文件    
 	 * @return Account    返回类型    
-	 * @throws
+	 * @throws    
 	 */
-	Account Login(Account account);
+	Account Login(Account account, HttpSession session, HttpServletRequest request) throws LoginException;
 
 }

@@ -6,7 +6,9 @@
 <mapper namespace="cn.edu.uestc.travel.dao.AccountDao">
 
 	<select id="findByAccount" parameterType="String" resultType="Account">
-		select * from user where account =#{username}
+		select * from user where username =#{username}
 	</select>
-	
+	<insert id="insert" parameterType="Account" useGeneratedKeys="true" keyProperty="accountId" >
+		
+	</insert>
 </mapper>
